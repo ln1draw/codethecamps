@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Locale.create([
+  {name: 'Bad Guys, Inc'},
+  {name: 'We Really Suck'},
+  {name: 'Illegal Person Detainment'},
+  {name: 'Everything We Do Is Wrong'}
+])
