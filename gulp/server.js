@@ -11,6 +11,8 @@ var util = require('util');
 
 var proxyMiddleware = require('http-proxy-middleware');
 
+var exec = require('child_process').exec;
+
 function browserSyncInit(baseDir, browser) {
   browser = browser === undefined ? 'default' : browser;
 
@@ -23,7 +25,10 @@ function browserSyncInit(baseDir, browser) {
 
   var server = {
     baseDir: baseDir,
-    routes: routes
+    routes: routes,
+    middleware: [
+      proxyMiddleware('/api', { target: 'http://localhost:3000' })
+    ]
   };
 
   /*
@@ -36,6 +41,7 @@ function browserSyncInit(baseDir, browser) {
   // server.middleware = proxyMiddleware('/users', {target: 'http://jsonplaceholder.typicode.com', changeOrigin: true});
 
   browserSync.instance = browserSync.init({
+    port: 9000,
     startPath: '/',
     server: server,
     browser: browser
@@ -46,9 +52,15 @@ browserSync.use(browserSyncSpa({
   selector: '[ng-app]'// Only needed for angular apps
 }));
 
+gulp.task('rails', function () {
+  exec("rails server");
+});
+
 gulp.task('serve', ['watch'], function () {
   browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src]);
 });
+
+gulp.task('serve:full-stack',['rails', 'serve']);
 
 gulp.task('serve:dist', ['build'], function () {
   browserSyncInit(conf.paths.dist);
