@@ -4,6 +4,7 @@ class LocalesController < ApplicationController
   # GET /locales
   def index
     @locales = Locale.all
+    render json: @locales
   end
 
   # GET /locales/1

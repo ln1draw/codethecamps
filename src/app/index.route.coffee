@@ -13,3 +13,16 @@ angular.module 'fakeLaunchHub'
         controller: 'LocalesController'
 
     $urlRouterProvider.otherwise '/'
+
+  # .factory 'Locales', (RailsResource) ->
+  #   class Locales extends RailsResource
+  #     @configure url: "/api/locales", name: "locales", isArray: true
+
+
+  .factory 'Locales', (railsResourceFactory) ->
+    return railsResourceFactory({
+      url: '/api/locales',
+      name: 'locales'
+    });
+
+  

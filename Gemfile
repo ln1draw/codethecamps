@@ -6,6 +6,7 @@ gem 'rails', '~> 5.0.7'
 
 gem 'spring', :group => :development
 
+gem 'angularjs-rails-resource'
 
 gem 'pg'
 
