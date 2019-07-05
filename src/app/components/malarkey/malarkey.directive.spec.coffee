@@ -8,7 +8,7 @@ describe 'directive malarkey', () ->
   vm = undefined
   element = element
 
-  beforeEach module 'fakeLaunchHub'
+  beforeEach module 'codeTheCamps'
 
   beforeEach inject ($compile, $rootScope, githubContributor, $q) ->
     spyOn(githubContributor, 'getContributors').and.callFake () ->

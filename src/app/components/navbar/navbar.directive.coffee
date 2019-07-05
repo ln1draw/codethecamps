@@ -1,4 +1,4 @@
-angular.module 'fakeLaunchHub'
+angular.module 'codeTheCamps'
   .directive 'acmeNavbar', ->
 
     NavbarController = (moment) ->

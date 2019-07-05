@@ -1,7 +1,7 @@
 describe 'controllers', () ->
   vm = undefined
 
-  beforeEach module 'fakeLaunchHub'
+  beforeEach module 'codeTheCamps'
 
   beforeEach inject ($controller, webDevTec, toastr) ->
     spyOn(webDevTec, 'getTec').and.returnValue [{}, {}, {}, {}, {}]

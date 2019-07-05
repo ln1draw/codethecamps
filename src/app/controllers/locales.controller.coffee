@@ -1,4 +1,4 @@
-angular.module 'fakeLaunchHub'
+angular.module 'codeTheCamps'
   .controller 'LocalesController', ($scope, Locales) ->
     $scope.loading = true
     Locales.query().then (locales) ->

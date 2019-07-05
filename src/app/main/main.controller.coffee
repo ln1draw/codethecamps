@@ -1,4 +1,4 @@
-angular.module 'fakeLaunchHub'
+angular.module 'codeTheCamps'
   .controller 'MainController', ($timeout, webDevTec, toastr) ->
     'ngInject'
     vm = this

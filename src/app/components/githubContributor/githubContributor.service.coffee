@@ -1,4 +1,4 @@
-angular.module 'fakeLaunchHub'
+angular.module 'codeTheCamps'
   .factory 'githubContributor', ($log, $http) ->
     'ngInject'
     apiHost = 'https://api.github.com/repos/Swiip/generator-gulp-angular'

@@ -1,4 +1,4 @@
-angular.module 'fakeLaunchHub'
+angular.module 'codeTheCamps'
   .config ($stateProvider, $urlRouterProvider) ->
     'ngInject'
     $stateProvider

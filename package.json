@@ -1,5 +1,5 @@
 {
-  "name": "fakeLaunchHub",
+  "name": "codeTheCamps",
   "version": "0.0.0",
   "dependencies": {
     "angularjs-rails-resource": "^2.3.1",

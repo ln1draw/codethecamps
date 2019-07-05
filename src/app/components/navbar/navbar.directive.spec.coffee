@@ -8,7 +8,7 @@ describe 'directive navbar', () ->
   element = undefined
   timeInMs = undefined
 
-  beforeEach module 'fakeLaunchHub'
+  beforeEach module 'codeTheCamps'
 
   beforeEach inject ($compile, $rootScope) ->
     timeInMs = new Date()
