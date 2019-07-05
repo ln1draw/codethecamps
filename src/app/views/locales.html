@@ -1,8 +1,7 @@
 <div class="container">
   <div ng-include="'components/navbar/navbar.html'"></div>
   <h1>Locales</h1>
-  {{2+2}}
-  {{loading}}
+  <div ng-if="loading">loading...</div>
   {{locales.response}}
   <ul ng-repeat="locale in locales">
     <li>{{locale.name}}</li>
