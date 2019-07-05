@@ -51,10 +51,10 @@ angular.module 'fakeLaunchHub'
         'logo': 'ui-bootstrap.png'
       },
       {
-        'title': 'Sass (Node)',
-        'url': 'https://github.com/sass/node-sass',
-        'description': 'Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass.',
-        'logo': 'node-sass.png'
+        'title': 'Sass (Ruby)',
+        'url': 'http://sass-lang.com/',
+        'description': 'Original Syntactically Awesome StyleSheets implemented in Ruby',
+        'logo': 'ruby-sass.png'
       },
       {
         'title': 'CoffeeScript',

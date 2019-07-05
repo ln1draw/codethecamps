@@ -24,7 +24,7 @@ angular.module 'fakeLaunchHub'
 
     vm.awesomeThings = []
     vm.classAnimation = ''
-    vm.creationDate = 1562282892215
+    vm.creationDate = 1562348300767
     vm.showToastr = showToastr
     activate()
     return
