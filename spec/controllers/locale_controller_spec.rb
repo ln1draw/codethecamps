@@ -4,11 +4,21 @@ RSpec.describe LocalesController, type: :controller do
   # don't forget to add valid attributes here as we update
   # the Locale model and controller
   let(:valid_attributes) {
-    {name: "bad detention dudes"}
+    {
+      name: "Heartless Bastards",
+      degree: 1,
+      location: "123 fake st",
+      citation: "www.google.com",
+      contact: "a@b.c",
+      connections: 3,
+      blurb: "it's a very bad place"
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of invalid attributes")
+    {
+      name: '',
+    }
   }
 
   # This should return the minimal set of values that should be in the session
