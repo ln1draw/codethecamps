@@ -1,0 +1,244 @@
+Searching 25039 files for "fakeLaunchHub"
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/githubContributor/githubContributor.service.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').factory('githubContributor', function($log, $http) {
+    3      'ngInject';
+    4      var apiHost, getContributors, service;
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/githubContributor/githubContributor.service.spec.js:
+    1  (function() {
+    2    describe('service githubContributor', function() {
+    3:     beforeEach(module('codeTheCamps'));
+    4      it('should be registered', inject(function(githubContributor) {
+    5        return expect(githubContributor).not.toEqual(null);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/malarkey/malarkey.directive.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').directive('acmeMalarkey', function() {
+    3      var MalarkeyController, directive, linkFunc;
+    4      MalarkeyController = function($log, githubContributor) {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/malarkey/malarkey.directive.spec.js:
+   12      vm = void 0;
+   13      element = element;
+   14:     beforeEach(module('codeTheCamps'));
+   15      beforeEach(inject(function($compile, $rootScope, githubContributor, $q) {
+   16        spyOn(githubContributor, 'getContributors').and.callFake(function() {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/navbar/navbar.directive.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').directive('acmeNavbar', function() {
+    3      var NavbarController, directive;
+    4      NavbarController = function(moment) {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/navbar/navbar.directive.spec.js:
+   12      element = void 0;
+   13      timeInMs = void 0;
+   14:     beforeEach(module('codeTheCamps'));
+   15      beforeEach(inject(function($compile, $rootScope) {
+   16        timeInMs = new Date();
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/webDevTec/webDevTec.service.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').service('webDevTec', function() {
+    3      'ngInject';
+    4      var data, getTec;
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/components/webDevTec/webDevTec.service.spec.js:
+    1  (function() {
+    2    describe('service webDevTec', function() {
+    3:     beforeEach(module('codeTheCamps'));
+    4      it('should be registered', inject(function(webDevTec) {
+    5        return expect(webDevTec).not.toEqual(null);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/controllers/locales.controller.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').controller('LocalesController', function($scope, Locales) {
+    3      $scope.loading = true;
+    4      return Locales.query().then(function(locales) {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/index.config.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').config(function($logProvider, toastrConfig) {
+    3      'ngInject';
+    4      $logProvider.debugEnabled(true);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/index.constants.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').constant('malarkey', malarkey).constant('moment', moment);
+    3  
+    4  }).call(this);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/index.module.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'rails']);
+    3  
+    4  }).call(this);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/index.route.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').config(function($stateProvider, $urlRouterProvider) {
+    3      'ngInject';
+    4      $stateProvider.state('home', {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/index.run.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').run(function($log) {
+    3      'ngInject';
+    4      return $log.debug('runBlock end');
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/main/main.controller.js:
+    1  (function() {
+    2:   angular.module('codeTheCamps').controller('MainController', function($timeout, webDevTec, toastr) {
+    3      'ngInject';
+    4      var activate, getWebDevTec, showToastr, vm;
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/app/main/main.controller.spec.js:
+    3      var vm;
+    4      vm = void 0;
+    5:     beforeEach(module('codeTheCamps'));
+    6      beforeEach(inject(function($controller, webDevTec, toastr) {
+    7        spyOn(webDevTec, 'getTec').and.returnValue([{}, {}, {}, {}, {}]);
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/.tmp/serve/index.html:
+    1  <!doctype html>
+    2: <html ng-app="codeTheCamps">
+    3    <head>
+    4      <meta charset="utf-8">
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/bower.json:
+    1  {
+    2:   "name": "codeTheCamps",
+    3    "version": "0.0.0",
+    4    "dependencies": {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/client/gulp/build.js:
+   21      }))
+   22      .pipe($.angularTemplatecache('templateCacheHtml.js', {
+   23:       module: 'codeTheCamps',
+   24        root: 'app'
+   25      }))
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/gulp/build.js:
+   21      }))
+   22      .pipe($.angularTemplatecache('templateCacheHtml.js', {
+   23:       module: 'codeTheCamps',
+   24        root: 'app'
+   25      }))
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/karma.conf.js:
+   52      ngHtml2JsPreprocessor: {
+   53        stripPrefix: '(' + conf.paths.src + '/|' + conf.paths.tmp + '/serve/)',
+   54:       moduleName: 'codeTheCamps'
+   55      },
+   56  
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/package-lock.json:
+    1  {
+    2:   "name": "codeTheCamps",
+    3    "version": "0.0.0",
+    4    "lockfileVersion": 1,
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/package.json:
+    1  {
+    2:   "name": "codeTheCamps",
+    3    "version": "0.0.0",
+    4    "dependencies": {
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/githubContributor/githubContributor.service.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .factory 'githubContributor', ($log, $http) ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/githubContributor/githubContributor.service.spec.coffee:
+    1  describe 'service githubContributor', () ->
+    2  
+    3:   beforeEach module 'codeTheCamps'
+    4  
+    5    it 'should be registered', inject (githubContributor) ->
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/malarkey/malarkey.directive.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .directive 'acmeMalarkey', ->
+    3  
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/malarkey/malarkey.directive.spec.coffee:
+    9    element = element
+   10  
+   11:   beforeEach module 'codeTheCamps'
+   12  
+   13    beforeEach inject ($compile, $rootScope, githubContributor, $q) ->
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/navbar/navbar.directive.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .directive 'acmeNavbar', ->
+    3  
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/navbar/navbar.directive.spec.coffee:
+    9    timeInMs = undefined
+   10  
+   11:   beforeEach module 'codeTheCamps'
+   12  
+   13    beforeEach inject ($compile, $rootScope) ->
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/webDevTec/webDevTec.service.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .service 'webDevTec', () ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/components/webDevTec/webDevTec.service.spec.coffee:
+    1  describe 'service webDevTec', () ->
+    2:   beforeEach module 'codeTheCamps'
+    3  
+    4    it 'should be registered', inject (webDevTec) ->
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/controllers/locales.controller.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .controller 'LocalesController', ($scope, Locales) ->
+    3      $scope.loading = true
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/index.config.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .config ($logProvider, toastrConfig) ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/index.constants.coffee:
+    1: angular.module('codeTheCamps')
+    2    .constant 'malarkey', malarkey
+    3    .constant 'moment', moment
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/index.module.coffee:
+    1: angular.module 'codeTheCamps', [
+    2    'ngAnimate',
+    3    'ngCookies',
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/index.route.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .config ($stateProvider, $urlRouterProvider) ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/index.run.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .run ($log) ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/main/main.controller.coffee:
+    1: angular.module 'codeTheCamps'
+    2    .controller 'MainController', ($timeout, webDevTec, toastr) ->
+    3      'ngInject'
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/app/main/main.controller.spec.coffee:
+    2    vm = undefined
+    3  
+    4:   beforeEach module 'codeTheCamps'
+    5  
+    6    beforeEach inject ($controller, webDevTec, toastr) ->
+
+/Users/ellen/Documents/code/CodeTheCamps/code_the_camps/src/index.html:
+    1  <!doctype html>
+    2: <html ng-app="codeTheCamps">
+    3    <head>
+    4      <meta charset="utf-8">
+
+40 matches across 40 files

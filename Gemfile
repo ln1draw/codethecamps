@@ -14,10 +14,13 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'pry'
+  gem 'database_cleaner'
 end
 
 group :development do
   gem 'listen'
+  gem 'pry'
 end
 
 
