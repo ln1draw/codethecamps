@@ -1,17 +1,16 @@
 .acme-navbar-text{
-  color: white;
-}
-
-a {
-  color: black;
+  color: $brand-beige;
 }
 
 h1 {
   font-size: 2em;
-  margin: 0;
   line-height: 1.25em;
 }
 
 a:hover, a:focus {
-  color: greenyellow;
+  color: $brand-yellow;
+}
+
+.navbar {
+  background-color: $brand-black;
 }

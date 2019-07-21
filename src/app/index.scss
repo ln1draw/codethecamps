@@ -12,6 +12,14 @@ $icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 // endbower
 
+// COLORS
+$brand-beige: #E6E4E0;
+$brand-blue: #406993;
+$brand-red: #BB4958;
+$brand-yellow: #E6D439;
+$brand-black: #29232A;
+
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -24,6 +32,22 @@ $icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
 
   img.pull-right {
     width: 50px;
+  }
+}
+
+body {
+  background-color: $brand-beige;
+}
+
+h1 {
+  color: $brand-blue;
+}
+
+a {
+  color: $brand-yellow;
+
+  &:hover {
+    color: $brand-blue;
   }
 }
 
