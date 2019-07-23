@@ -14,3 +14,24 @@ a:hover, a:focus {
 .navbar {
   background-color: $brand-black;
 }
+
+.navbar-header {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-link-container {
+  clear: left;
+  min-height: 60px;
+  width: 50%;
+  margin: auto;
+
+  ul {
+    width: 100%;
+
+    li{
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
