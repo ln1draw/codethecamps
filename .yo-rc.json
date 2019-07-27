@@ -21,6 +21,10 @@
           "module": "ngSanitize"
         },
         {
+          "key": "map",
+          "module": "ngMap"
+        },
+        {
           "key": "messages",
           "module": "ngMessages"
         },
