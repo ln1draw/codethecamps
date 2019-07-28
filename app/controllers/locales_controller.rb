@@ -9,6 +9,8 @@ class LocalesController < ApplicationController
 
   # GET /locales/1
   def show
+    @locale = Locale.find(params[:id])
+    render json: @locale
   end
 
   # GET /locales/new

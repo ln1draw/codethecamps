@@ -11,6 +11,10 @@ angular.module 'codeTheCamps'
         url: '/locales'
         templateUrl: 'app/views/locales.html'
         controller: 'LocalesController'
+      .state 'locale',
+        url: '/locale/:id'
+        templateUrl: 'app/views/locale.html'
+        controller: 'LocaleController'
 
     $urlRouterProvider.otherwise '/'
 

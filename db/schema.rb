@@ -10,21 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190706174202) do
+ActiveRecord::Schema.define(version: 20190728222049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "locales", force: :cascade do |t|
-    t.string   "name",        null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "degree"
+    t.string   "name",             null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
     t.text     "blurb"
-    t.string   "location"
     t.string   "citation"
-    t.string   "contact"
-    t.integer  "connections"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "pretty_address"
+    t.string   "email_address"
+    t.text     "email_suggestion"
   end
 
 end

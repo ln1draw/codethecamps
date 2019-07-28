@@ -55,6 +55,37 @@ a {
   }
 }
 
+.main-map-box {
+  padding: 40px;
+  background-color: $brand-blue;
+
+  #map {
+    border: 1px solid $brand-beige;
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+    min-width: 200px;
+  }
+}
+
+.main-data-box {
+  padding: 40px;
+  background-color: $brand-red;
+
+  .locales-box {
+    background-color: $brand-beige;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .locale-listing {
+      margin: 10px;
+    }
+  }
+}
+
+nav.navbar.navbar-static-top {
+  margin: 0px;
+}
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
