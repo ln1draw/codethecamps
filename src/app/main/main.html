@@ -17,6 +17,7 @@
           document.getElementById('map'), {zoom: 4, center: uluru});
           // The marker, positioned at Uluru
           var marker = new google.maps.Marker({position: uluru, map: map});
+
           }
     </script>
     <!--Load the API from the specified URL
@@ -37,7 +38,7 @@
       <ul ng-if="!loading">
         <li ng-repeat="locale in locales" class="locale-listing">
           <a ng-href="/#/locale/{{locale.id}}">
-            {{locale}}
+            <h5>{{locale.name}}, {{locale.prettyAddress}}<h5>
           </a>
         </li>
       </ul>

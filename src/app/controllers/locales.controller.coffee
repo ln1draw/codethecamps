@@ -4,3 +4,5 @@ angular.module 'codeTheCamps'
     Locales.query().then (locales) ->
       $scope.locales = locales
       $scope.loading = false
+
+
